@@ -12,12 +12,11 @@ urlpatterns = [
         path(route='dealer/<int:dealer_id>', view=views.get_dealer_details, name='dealer_details'),
         path(route='reviews/dealer/<int:dealer_id>', view=views.get_dealer_reviews, name='dealer_details'),
         path(route='add_review', view=views.add_review, name='add_review'),
-    
         
-    # # path for registration
-
-    # path for login
-    # path(route='login', view=views.login_user, name='login'),
+        # path for login
+        path(route='login', view=views.login_user, name='login'),
+        path(route='logout', view=views.logout_request, name='logout'),
+        path(route='register', view=views.registration, name='register'),
 
     # path for dealer reviews view
 
